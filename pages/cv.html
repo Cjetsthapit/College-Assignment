@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name = "description" content= "Just Basic HTML"/>
+    <meta name = "Author" content= " Srijeet"/>
+    <meta name = "keywords" content= "HTML CSS JAVASCRIPT"/>
+    <title>CV</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        /* css for cv page */
+        .banner-content{
+        width:300px;
+        text-align: justify;;
+        font-family: 'light';
+        font-size:18px;
+        padding:15px;
+        right:120px;
+    }
+    .button{
+        position:absolute;
+        top:500px;
+        right:180px;
+    }
+    .blog .mini-container > div{
+        padding:10px;
+        margin:25px;
+        font-family: 'regular';
+        font-size:20px;
+        line-height: 140%;
+    }
+    .text{
+        padding:10px;
+        margin:10px;
+        font-family: 'regular';
+        font-size:20px;
+        line-height: 140%;
+    }
+       
+        
+    .title img{
+        margin-top: 30px;;
+        width:400px;;
+    }
+    #skills img{
+
+        width:300px;
+    }
+    .text{
+        
+         border-radius: 5px;; 
+    }
+    .tab-content{
+        margin-top:60px;
+    }
+    .cont{
+        cursor: pointer;
+        text-align: center;
+        border-radius: 5px;
+        width:180px;
+        border: 1px solid #eee;
+        margin-bottom:10px;
+        overflow: hidden;
+        letter-spacing: 0;
+        background-color:#009866;
+        color:#fff;
+    }
+    .cont:hover{
+        background-color:#00724c;
+        border:1px solid #009866;
+        color:#fff;
+        
+    }
+   
+    </style>
+</head>
+<body >
+    <!-- Navbar -->
+    <Nav id="header">
+        <div class="container flex-row navbar">
+            <div  id="navigation" class="nav-section flex-row">
+                <div class="nav " ><a href="../index.html">Home</a></div>
+                <div class="nav"><a href="blog.html">Blog</a></div>
+                <div class="nav active"><a href="cv.html">CV</a></div>
+                <div class="nav"><a href="research.html">Research</a></div>
+                <div class="nav"><a href="contact.html">Contact us</a></div>
+            </div>
+        </div>
+    </Nav>
+    <!-- End of Navbar -->
+
+<!-- Banner -->
+    <div class="banner ">
+        <div class="banner-image">
+            <img src="../images/cv.svg" alt="banner image">
+        </div>
+        <div class="banner-content">
+            <div style="font-size: 30px;;">Hello, a bit about me!</div>
+               <strong>Name</strong>  : Srijeet Sthapit
+                <br/>
+               <strong>DOB</strong>  : 2000/05/10
+                <br/>
+                <strong>Email</strong> : sthapitsrijeet@gmail.com
+                <br/>
+                <strong>Contact</strong> : +977 9843815877
+                <br/>
+                Currently studying at Islington College
+
+                
+                
+        </div>
+        <div class="button">
+          <a href="#internal">  <button type="submit" class="btn btn-default btn-large"> Get to know me</button></a>
+        </div>
+    </div>
+    <!-- End of banner -->
+
+     <div id="internal" style="height:100px;"></div>
+
+    <!-- Toggle -->
+    <!-- Navigation buttons to dynamically change content -->
+    <div class="tab" id="tab" >
+        <button class="tablinks active" onclick="openTab(event, 'education')">Education</button>
+        <button class="tablinks" onclick="openTab(event, 'technical-skills')">Technical Skills</button>
+        <button class="tablinks" onclick="openTab(event, 'soft-skills')">Soft Skills</button>
+        <button class="tablinks" onclick="openTab(event, 'certificates')">Certificates</button>
+        <button class="tablinks" onclick="openTab(event, 'hobbies')">Hobbies</button>
+    </div>
+<!-- Main conternt of CV -->
+    <div id="education" class="tabcontent mini-container " style="display: block;">
+        <div class="content flex-row">
+            <div class="title">
+                
+                <img  src="../images/graduation.svg" alt="introduction">
+                
+            </div>
+            <div class="title">
+                Education
+                <table class="text" style="width:100%; padding:10px; ">
+                    <tr>
+                        <td>2016</td>
+                        <td>Completed 10 from Swarim School</td>
+                    </tr>
+                    <tr>
+                        <td>2018</td>
+                        <td>Completed A levels from Trinity International College</td>
+                    </tr>
+                    <tr>
+                        <td>2019</td>
+                        <td>Joined Islington College for Bsc(Computing)</td>
+                    </tr>
+
+                </table>
+             </div>
+        </div>
+        
+        
+      </div>
+      
+      <div id="technical-skills" class="tabcontent mini-container ">
+        <div class="cv-content flex-row">
+            <div class="title">
+                
+                <img  src="../images/htmlcss.svg" alt="introduction">
+                
+            </div>
+            <div class="title" style="width:80%">
+                Technical Skills
+                <div class="text">
+                    <div class="flex-column">
+                        <div class="cont">HTML  <span><i class="fab fa-html5"></i></span> </div>
+                        <div class="cont">CSS3  <span><i class="fab fa-css3"></i></span></div>
+                        <div class="cont">Bootstrap <span><i class="fab fa-bootstrap"></i></span></div>
+                        <div class="cont">JavaScript  <span><i class="fab fa-js-square"></i></span></div>
+                        <div class="cont">Java  <span><i class="fab fa-java"></i></span></div>
+                        <div class="cont">React  <span><i class="fab fa-react"></i></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                
+                <img  src="../images/react.svg" alt="introduction">
+                
+            </div>
+            
+            
+        </div>
+      </div>
+
+      <div id="soft-skills" class="tabcontent mini-container ">
+        <div class="cv-content flex-row">
+            <div class="title">
+                
+                <img  src="../images/soft1.svg" alt="introduction">
+                
+            </div>
+            <div class="title" >
+                Soft Skills
+                <div class="text">
+                    <div class="flex-column">
+                        <div class="cont">Leadership  <span><i class="fas fa-users"></i></span> </div>
+                        <div class="cont">Teamwork  <span><i class="fas fa-hands-helping"></i></span></div>
+                        <div class="cont">Communication <span><i class="fas fa-comments"></i></span></div>
+                        <div class="cont">Problem Solving   <span><i class="fas fa-exclamation-triangle"></i></span></div>
+                        <div class="cont">Creativity  <span><i class="fas fa-smile"></i></span></div>
+                        <div class="cont">Time Management  <span><i class="fas fa-clock"></i></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                
+                <img  src="../images/soft2.svg" alt="introduction" style="width: 375px;">
+                
+            </div>
+            
+            
+        </div>
+      </div>
+
+      <div id="certificates" class="tabcontent mini-container">
+        <div class="cv-content flex-row">
+            <div class="title">
+                
+                <img  src="../images/certificate.svg" alt="introduction">
+                
+            </div>
+            <div class="title" style="width:80%">
+                Certificates
+                <div class="text" >
+                    <div class="flex-column">
+                        <div class="cont">SLC Certificate <span><i class="fas fa-percent"></i></span></div>
+                        <div class="cont">CIE A Levels Certificate <span><i class="fas fa-percent"></i></span></div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                
+                <img  src="../images/percentage.svg" alt="introduction">
+                
+            </div>
+            
+            
+        </div>
+      </div>
+      
+      <div id="hobbies" class="tabcontent mini-container">
+        <div class="cv-content flex-row">
+            <div class="title">
+                
+                <img  src="../images/basketball1.svg" alt="introduction">
+                
+            </div>
+            <div class="title" style="width:80%">
+                Hobbies
+                <div class="text" >
+                    <div class="flex-column">
+                        <div class="cont">Basketball <span><i class="fas fa-basketball-ball"></i></span></div>
+                        <div class="cont">Programming <span><i class="fas fa-code"></i></span></div>
+                        <div class="cont">Adventures <span><i class="fas fa-hiking"></i></span></div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                
+                <img  src="../images/adventure.svg" alt="introduction">
+                
+            </div>
+            
+            
+        </div>
+      </div>
+    
+
+
+    <!-- End of toggle -->
+   <!-- Footer -->
+   <Footer class="footer">
+    <div class="container">
+        <div class="row ">
+            <div class="footer-item " style=" display:flex ; flex-direction:column;">
+                <div class="footer-title">Contact Details</div>
+                <div class="footer-text"><i class="fas fa-envelope"></i> Email</div>
+                <div class="footer-text">sthapitsrijeet@gmail.com</div>
+                <div class="footer-text"><i class="fas fa-phone "></i> Phone</div>
+                <div class="footer-text">+977 9843815877</div>
+                <div class="footer-text">+97701 4226506</div>
+            </div>
+
+            <div class="footer-item">
+                <div class="footer-title">Useful Links</div>
+                <div class="footer-text"> <a href="https:www.w3schools.com" target="_blank">w3school</a></div>
+                <div class="footer-text"> <a href="https:www.codeacademy.com" target="_blank">CodeAcademy</a></div>
+                <div class="footer-text"> <a href="https:www.css-tricks.com" target="_blank">css-tricks</a></div>
+                <div class="footer-text"> <a href="https:www.https://developer.mozilla.org/en-US/" target="_blank">Developer Mozilla</a></div>
+            </div>
+
+            <div class="footer-item">
+                <div class="sub-text">
+                    Follow us on:
+
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-item"> 
+                <div class="sub-text">Newsletter</div>
+                
+                        <form class="newsletter" >
+                            <div class="input-group flex-row" >
+                                <input  type="text" name="search" placeholder="Email address">
+                                <button type="submit" class="btn btn-default">Subscribe</button>
+                            </div>
+                        </form >
+               
+                </div>
+               
+            </div>
+        </div>
+        <div class="lower-footer">
+            <div class=" footer-details mini-container  flex-row"  >
+                <div class="left-footer"> &copy; Copyright Srijeet &trade;2020. All rights Reserved. </div>
+               <div class="right-footer"> Developed by : Srijeet Sthapit</div></div>
+        </div>
+        
+    </div>
+</Footer>
+<!-- End of footer -->
+  <!-- External JS -->
+    <script src="../js/custom.js"></script>
+</body>
+</html>

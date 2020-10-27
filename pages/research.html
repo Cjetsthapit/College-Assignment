@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name = "description" content= "Just Basic HTML"/>
+    <meta name = "Author" content= " Srijeet"/>
+    <meta name = "keywords" content= "HTML CSS JAVASCRIPT"/>
+    <title>Research</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        /* css for research page */
+        .banner-content{
+        width:300px;
+        text-align: justify;
+        font-family: 'light';
+        font-size:18px;
+        padding:15px;
+        right:120px;
+    }
+    .button{
+        position:absolute;
+        top:500px;
+        right:180px;
+    }
+    .blog .mini-container > div{
+        padding:10px;
+        margin:25px;
+        font-family: 'regular';
+        font-size:20px;
+        line-height: 140%;
+    }
+    .text{
+        padding:10px;
+        margin:10px;
+        font-family: 'regular';
+        font-size:20px;
+        line-height: 140%;
+    }
+       
+    .research-content{
+        font-size: 16px;
+        margin-top: 30px;
+        text-align: justify;
+        padding:10px;
+        
+    }
+    .title img{
+        margin-top: 30px;;
+        width:400px;;
+    }
+   
+    .text{
+        
+         border-radius: 5px;; 
+    }
+    .tab-content{
+        margin-top:60px;
+    }
+    .content img{
+        width:550px;
+        box-shadow: 4px 6px 8px 4px #ccc;;
+    }
+    .content img:hover{
+        transform: scale(1.1);
+    }
+    .flex-row{
+        justify-content: space-around;
+    }
+    .cont >div{
+        margin-top: 10px;;
+    }
+    
+    .cont{
+        cursor: pointer;
+        text-align: center;
+        border-radius: 5px;
+        width:180px;
+        border: 1px solid #eee;
+        margin-bottom:10px;
+        overflow: hidden;
+        letter-spacing: 0;
+        background-color:#009866;
+        color:#fff;
+    }
+    .cont:hover{
+        background-color:#00724c;
+        border:1px solid #009866;
+        color:#fff;
+        /* letter-spacing: 2; */
+    }
+    </style>
+</head>
+<body >
+    <!-- Navbar -->
+    <Nav id="header">
+        <div class="container flex-row navbar" style="justify-content: flex-end;">
+            <div  id="navigation" class="nav-section flex-row">
+                <div class="nav " ><a href="../index.html">Home</a></div>
+                <div class="nav"><a href="blog.html">Blog</a></div>
+                <div class="nav"><a href="cv.html">CV</a></div>
+                <div class="nav active"><a href="research.html">Research</a></div>
+                <div class="nav"><a href="contact.html">Contact us</a></div>
+            </div>
+        </div>
+    </Nav>
+    <!-- End of Navbar -->
+
+
+    <div class="banner ">
+        <div class="banner-image">
+            <img src="../images/research.svg" alt="banner image">
+        </div>
+        <div class="banner-content">
+            <div style="font-size: 60px;;">Research Sites</div>
+            <div>
+                Sites referenced to my webpages
+            </div>
+                
+                
+        </div>
+        <div class="button" style="position:absolute; right:225px; top:475px;">
+          <a href="#internal">  <button type="submit" class="btn btn-default btn-large"> Scroll Down</button></a>
+        </div>
+        
+            
+            
+
+     </div>
+
+     <div id="internal" style="height:100px;"></div>
+
+    <!-- Toggle -->
+    <!-- Navigation buttons to dynamically change content -->
+    <div class="tab" id="tab" >
+        <button class="tablinks active" onclick="openTab(event, 'research1')">Research 1</button>
+        <button class="tablinks" onclick="openTab(event, 'research2')">Research 2</button>
+        <button class="tablinks" onclick="openTab(event, 'research3')">Research 3</button>
+        <button class="tablinks" onclick="openTab(event, 'research4')">Research 4</button>
+        <button class="tablinks" onclick="openTab(event, 'research5')">Research 5</button>
+    </div>
+<!-- Main content of Reserch page -->
+    <div id="research1" class="tabcontent container " style="display: block;">
+        <div class="mid-div" style="font-size: 30px;;">Research 1 : Navigation Bar</div>
+        <div class="content flex-row" >
+           <div class="left-div">
+               <img src="../images/r1.png" alt="r1">
+           </div>
+           
+            <div class="right-div">
+                <a href="https://www.searchenginejournal.com/" target="_blank"><img src="../images/research-content1.png" alt="Research 1"></a>
+            </div>
+        
+        </div>
+        <div class="research-content mini-container">
+            Navigation bar is one of the most important element while designing a website because it allows users to quickly visit any section within the site. A website without a navigation bar becomes very hard to keep track of. The most common used type of navigation bar is fixed or navigation bar. It is basically a bar stapled to the top of the screen. So, the users will never have to scroll to the top just to navigate to other pages. To make the users stick to a page, they must find every aspect of the webpage intersting and the concept of fixed navbar enhances such experience by saving time and giving user control.
+            <br>
+            <br>
+            Both of the websites referenced by the images has used fixed navigation bar to uplift user experience. Although their designs are different, they have the same task  i.e to stick to the top and make navigating to other pages easier
+
+        </div>
+        
+    </div>
+
+    <div id="research2" class="tabcontent container " ">
+        <div class="mid-div" style="font-size: 30px;;">Research 2 : Footer</div>
+        <div class="content flex-row" >
+           <div class="left-div">
+               <img src="../images/r2.png" alt="r2">
+           </div>
+           
+            <div class="right-div">
+                <a href="https://getlevelten.com/blog/randall-knutson/design-decisions-buttons-vs-links-fight" target="_blank"><img src="../images/research-content2.png" alt="Research 2"></a>
+            </div>
+        
+        </div>
+        <div class="research-content mini-container">
+            Footers are as important as the navigation bar in a website. They are not simply a place to put your copyright notice and certainly not the end of a website. They can to used to display important features such as brief information of the creator. They can be also used to enable linking to social apps such as linkedin, instagram and others to increase networking. So rather than making a small footer, it would be smart to add contents to the footer to make the website more navigatable.
+            <br>
+            <br>
+            Footer referenced by both these images are similar to a great extent.  The footer in both websites have been divided into two section where the first section contains columns relating to contact details and useful links while the second contains copyright details.
+        </div>
+        
+    </div>
+
+    <div id="research3" class="tabcontent container " >
+        <div class="mid-div" style="font-size: 30px;;">Research 3 : Dynamic Div </div>
+        <div class="content flex-row" >
+           <div class="left-div">
+               <img src="../images/r3.png" alt="Web3">
+           </div>
+           
+            <div class="right-div">
+                <a href="https://www.w3schools.com" target="_blank"><img src="../images/research-content3.png" alt="Research 3"></a>
+            </div>
+        
+        </div>
+        <div class="research-content mini-container">
+            Proper use of JavaScript and css styles can lead to an appealing and clean changing of content in a webpage. It takes less time to load than creating a whole page and changing the contents of a particular part. Use of display properties is changed when a button is pressed and changed the property changes from block to  none or vice versa.
+            <br>
+            <br>
+            Design of both the webpages are completely different.The right website uses the concept to change some content while in the right major part of the page is changed.So, both of them have the same motive: to change the content dynamically. It has been achieved using JavaScript. Rather than redirecting to a different page to view differnt contents it uses Javascript to change the style of the html div.
+           
+        </div>
+        
+    </div>
+      
+    <div id="research4" class="tabcontent container " >
+        <div class="mid-div" style="font-size: 30px;;">Research 4 : Contact Page</div>
+        <div class="content flex-row" >
+           <div class="left-div">
+               <img src="../images/r4.png" alt="r4">
+           </div>
+           
+            <div class="right-div">
+                <a href="https://marvelapp.com/contact-us" target="_blank"><img src="../images/research-content4.png" alt="Research $"></a>
+            </div>
+        
+        </div>
+        <div class="research-content mini-container">
+            Contact page of a website holds same significance as other pages.The first function of a contact page is to grab attention of viewers. The concept is basically to let the users share their ideas regarding the contents of the webpage. In majority of the time, it is visited after all other contents are viewed. But a poorly managed contact page will surely bore the viewer despite the brilliance of other pages. Since user feedback is a important aspect to develop the pages, its important to keep the contact page simple, straightforward and as clean as possible.
+            <br>
+            <br>
+            The contact page of both the images are almost identical to one other. The major similarities are that both of them have a image and a form next to each other. Altough thier position are alternate. Both of them have a plain background and a submit button along with input fields
+        </div>
+        
+    </div>
+
+    <div id="research5" class="tabcontent container " >
+        <div class="mid-div" style="font-size: 30px;;">Research 5: Landing Page</div>
+        <div class="content flex-row" >
+           <div class="left-div">
+               <img src="../images/r5.png" alt="r5">
+           </div>
+           
+            <div class="right-div">
+                <a href="https://marvelapp.com/enterprise" target="_blank"><img src="../images/research-content5.png" alt="Research 5"></a>
+            </div>
+        
+        </div>
+        <div class="research-content mini-container" >
+            The first thing one notices when visiting a website is the landing page. Landing page is  basically the first web page that appears when a user clicks on a search engine result link. Landing page is the selling point of a website because it determines whether the user will stick to the page or move on to other interesting pages. A viewer may most certainly prefer a simple, clean and attractive landing page to one filled with lots of contents.
+            <br>
+            <br>
+            Landing pages of both the images are identical to some extent. Both of them are simple and clean with a  navbar with navigation options aligned to left. The website represented by left image however lacks logo.
+            The section below the navbar is same with some texts, images and buttons. However the position of the image is alternate in the pages
+        </div>
+        
+    </div>
+      
+    
+
+
+    <!-- End of toggle -->
+   <!-- Footer -->
+   <Footer class="footer">
+    <div class="container">
+        <div class="row ">
+            <div class="footer-item " style=" display:flex ; flex-direction:column;">
+                <div class="footer-title">Contact Details</div>
+                <div class="footer-text"><i class="fas fa-envelope"></i> Email</div>
+                <div class="footer-text">sthapitsrijeet@gmail.com</div>
+                <div class="footer-text"><i class="fas fa-phone "></i> Phone</div>
+                <div class="footer-text">+977 9843815877</div>
+                <div class="footer-text">+97701 4226506</div>
+            </div>
+
+            <div class="footer-item">
+                <div class="footer-title">Useful Links</div>
+                <div class="footer-text"> <a href="https:www.w3schools.com" target="_blank">w3school</a></div>
+                <div class="footer-text"> <a href="https:www.codeacademy.com" target="_blank">CodeAcademy</a></div>
+                <div class="footer-text"> <a href="https:www.css-tricks.com" target="_blank">css-tricks</a></div>
+                <div class="footer-text"> <a href="https:www.https://developer.mozilla.org/en-US/" target="_blank">Developer Mozilla</a></div>
+            </div>
+
+            <div class="footer-item">
+                <div class="sub-text">
+                    Follow us on:
+
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-item"> 
+                <div class="sub-text">Newsletter</div>
+                
+                        <form class="newsletter" >
+                            <div class="input-group flex-row" >
+                                <input  type="text" name="search" placeholder="Email address">
+                                <button type="submit" class="btn btn-default">Subscribe</button>
+                            </div>
+                        </form >
+               
+                </div>
+               
+            </div>
+        </div>
+        <div class="lower-footer">
+            <div class=" footer-details mini-container  flex-row"  >
+                <div class="left-footer"> &copy; Copyright Srijeet &trade;2020. All rights Reserved. </div>
+               <div class="right-footer"> Developed by : Srijeet Sthapit</div></div>
+        </div>
+        
+    </div>
+</Footer>
+<!-- End of footer -->
+    <script>
+      
+    </script>
+    <script src="../js/custom.js"></script>
+</body>
+</html>

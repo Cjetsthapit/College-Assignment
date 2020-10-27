@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name = "description" content= "Just Basic HTML"/>
+    <meta name = "Author" content= " Srijeet"/>
+    <meta name = "keywords" content= "HTML CSS JAVASCRIPT"/>
+    <title>Blog</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        /* Css Styles for blog */
+    .banner-content, .banner-content span{
+        font-family: 'light';
+        font-size:65px;
+        padding:15px;
+        right:50px;
+    }
+  
+    .blog .mini-container > div{
+        padding:10px 20px;
+        font-family: 'regular';
+        font-size:20px;
+        line-height: 140%;
+    }
+    .blog{
+        margin-top:70px;
+
+    }
+    .blog-item{
+        border: 1px solid #333;
+        height:70vh;
+        border-radius:10px 20px;
+        
+    }
+    .button{
+        position:absolute;
+        top:500px;
+        right:180px;
+    }
+   
+    .introduction .text, .verdict .text{
+        margin-right: 15px;
+    }
+    .title img{
+        margin-top: 30px;;
+        width:400px;;
+    }
+   
+    .advantages .text, .advantages .text{
+        margin-right: 15px;;
+    }
+    .content{
+        align-items: center;
+    }
+    /* Css for blog contents */
+   
+    
+    
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <Nav id="header">
+        <div class="container flex-row navbar">
+            <div  id="navigation" class="nav-section flex-row">
+                <div class="nav" ><a href="../index.html">Home</a></div>
+                <div class="nav active"><a href="blog.html">Blog</a></div>
+                <div class="nav"><a href="cv.html">CV</a></div>
+                <div class="nav"><a href="research.html">Research</a></div>
+                <div class="nav "><a href="contact.html">Contact us</a></div>
+            </div>
+        </div>
+    </Nav>
+    <!-- End of Navbar -->
+
+    <!-- Banner -->
+    <div class="banner ">
+        <div class="banner-image">
+            <img src="../images/blog.svg" alt="banner image">
+        </div>
+        <div class="banner-content">
+            My Thoughts <br><span style="text-align: center; margin-left:100px;">on</span>  <br> Technology
+        </div>
+        <div class="button">
+          <a href="#in">  <button type="submit" class="btn btn-default btn-large"> Want to Know??</button></a>
+        </div>
+        
+            
+            
+
+     </div>
+     <!-- Banner -->
+     <div id="in"></div>
+     <!-- Navigation buttons to dynamically change content -->
+     <div class="tab" id="tab" style="margin-top: 120px;;" >
+        <button class="tablinks active" onclick="openTab(event, 'introduction')">Introduction</button>
+        <button class="tablinks" onclick="openTab(event, 'advantages')">Positive Impacts</button>
+        <button class="tablinks" onclick="openTab(event, 'disadvantages')">Negative Impacts</button>
+        <button class="tablinks" onclick="openTab(event, 'verdict')">Verdict</button>
+    </div>
+    <!-- Blog content -->
+     <div class="blog" >
+        <div class="mini-container">
+            <div class="tabcontent introduction"  id="introduction" style="display: block;">
+                <div class="content flex-row">
+                    <div class="title">
+                        Introduction
+                        <img  src="../images/tutorial.svg" alt="introduction">
+                        
+                    </div>
+                    <div class="text">
+                        <span style="text-decoration: bold;">“It’s not that we use technology, we live technology”.</span> This quote by Geoffrey Reggio portrays how technology has come to become an indispensable part of our life. Development has been a major pursuit of humanity for a long time now. People havetried to improve their ways of life by innovating numerous and diverse things. One of the greatest advancements of the times has been technology. We now like in a world where
+                        every teen has a mobile device in their hand, where paper books are being replaced by
+                        e-books and surprisingly where even toddler are lured by gadgets! Computer
+                        technology in particular has taken the world by storm. Whether its forecasting the
+                        weather or performing even a minor calculation, there is no denying in the fact that
+                        technology has become our true savior.
+    
+                    </div>
+                </div>
+                
+                
+
+            </div>
+            <div class="tabcontent advantages" id="advantages">
+                <div class="content flex-row">
+                    <div class="text">
+                        In the present context, the positive impact technology has put forth is boundless. Here
+                        are some of the benefits in miscellaneous fields that computer technology has to offer:
+
+                       
+                       <br>
+                       
+                        <br/>
+                        <div>Acquiring Information</div>
+                        Via the Internet, online reference material, such as Encyclopedia, Wikipedia offer vast
+                        amounts of content supplemented by engaging multimedia and interactive links. E-book
+                        collections offer thousands of texts, and the sheer number of online articles and journals
+                        devoted to every imaginable topic make research efficient and highly rewarding.
+                        
+                        <br>
+                        <br>
+                        <div>Communication</div>
+                        
+                        
+                        From post mail which takes upto months to E-mail which can be delivered
+                        instantaneously, communication has evolved as per the advancement of technology.
+                        Social networking sites like Facebook, Twitter, Skype allows one to voice their opinions
+                        and also communicate with individual in any corner of the world.
+                        
+                        <br>
+                        <br>
+                        <div>Teaching and Education</div>
+                        
+                        Through the application of computer technology, learning can take place online where
+                        students attain knowledge virtually. Such facility has helped students, despite their
+                        economic status, assuage their craving for wisdom. Furthermore, the use multimedia
+                        has made learning more interactive boosting the efficiency of students to understand
+                        effectively.
+                    </div>
+                    <div class="title " >
+                        Advantages
+                        <img src="../images/advantages.svg" alt=" advantages" style=" display:flex; align-items:flex-start">
+                    </div>
+                </div>
+                
+               
+            </div>
+            <div class=" tabcontent disadvantages" id="disadvantages" >
+                <div class="content flex-row">
+                    <div class="title">
+                        Disadvantages
+                        <img  src="../images/privacy.svg" alt="disadvantages">
+                        
+                    </div>
+                    <div class="text">
+                        The immense advantages of technology has nullified the its downside in the
+                        contemporary society. Some drawbacks of technological advancement can be
+                        illustrated as:
+
+                       
+                       <br>
+                       
+                        <br/>
+                        <div>Depedency</div>
+                        Having access to a treasure-trove of resources is wonderful, but it can also create a
+                        condition of dependency. As most technological discoveries aim to reduce human effort,
+                        the human is becoming obsolete as processes become automated and jobs are made
+                        redundant.
+                        
+                        <br>
+                        <br>
+                        <div>Social Disconnect</div>
+                        
+                        
+                        There is an increasing tendency for people to socialize and communicate via digital
+                        devices rather than through real life contact. This can easily lead to a sense of
+                        disconnect and isolation. Studies have suggested that the lack of real life contact is
+                        causing depression and other forms of mental illness in many people.
+                        
+                        <br>
+                        <br>
+                        <div>Cyber Vulnerability  </div>
+                        
+                        The outgrowth of Internet has unknowingly paved its path toward dangers as people are
+                        being a victim of Cyber-crime on a daily basis. It has also made us question the security
+                        of confidential data and millions of dollars that are in risk due to unethical means
+                        through the use of computers.
+    
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="tabcontent verdict" id="verdict" >
+                <div class="content flex-row">
+                    <div class="text">
+                        We humans have thrived and left no stone unturned to quench our thirst for more and
+                        more advanced technology in hope to ease our burdensome lifestyle. It is crystal clear that the
+                        modern world does indeed place too much reliance on technology. On the one hand it does
+                        make our lives easier; but at what expense? Undoubtedly, the pros of technology outweighs its
+                        cons by a huge margin. But it does not mean that the negative aspects are something to be
+                        overseen. In my opinion, whilst we relish the boon of technology, we must be totally conscious
+                        to keep it within its limit so that it doesn’t turn into bane.
+                    </div>
+                    <div class="title">
+                        Verdict
+                        <img src="../images/verdict.svg" alt="verdict">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Blog content -->
+
+  <!-- Footer -->
+  <Footer class="footer">
+    <div class="container">
+        <div class="row ">
+            <div class="footer-item " style=" display:flex ; flex-direction:column;">
+                <div class="footer-title">Contact Details</div>
+                <div class="footer-text"><i class="fas fa-envelope"></i> Email</div>
+                <div class="footer-text">sthapitsrijeet@gmail.com</div>
+                <div class="footer-text"><i class="fas fa-phone "></i> Phone</div>
+                <div class="footer-text">+977 9843815877</div>
+                <div class="footer-text">+97701 4226506</div>
+            </div>
+
+            <div class="footer-item">
+                <div class="footer-title">Useful Links</div>
+                <div class="footer-text"> <a href="https:www.w3schools.com" target="_blank">w3school</a></div>
+                <div class="footer-text"> <a href="https:www.codeacademy.com" target="_blank">CodeAcademy</a></div>
+                <div class="footer-text"> <a href="https:www.css-tricks.com" target="_blank">css-tricks</a></div>
+                <div class="footer-text"> <a href="https:www.https://developer.mozilla.org/en-US/" target="_blank">Developer Mozilla</a></div>
+            </div>
+
+            <div class="footer-item">
+                <div class="sub-text">
+                    Follow us on:
+
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-item"> 
+                <div class="sub-text">Newsletter</div>
+                
+                        <form class="newsletter" >
+                            <div class="input-group flex-row" >
+                                <input  type="text" name="search" placeholder="Email address">
+                                <button type="submit" class="btn btn-default">Subscribe</button>
+                            </div>
+                        </form >
+               
+                </div>
+               
+            </div>
+        </div>
+        <div class="lower-footer">
+            <div class=" footer-details mini-container  flex-row"  >
+                <div class="left-footer"> &copy; Copyright Srijeet &trade;2020. All rights Reserved. </div>
+               <div class="right-footer"> Developed by : Srijeet Sthapit</div></div>
+        </div>
+        
+    </div>
+</Footer>
+<!-- End of footer -->
+    <script src="../js/custom.js"></script>
+</body>
+</html>
